@@ -4,7 +4,7 @@ Mikaela's Fixes
 
 2. Used Google Dev Tools to see Console errors that would give me a clue for why CSS was not loading. See a 422 error that theme.scss was an Unprocessible Entity. While I was not 100% on why this was happening, I worked backwards using my understanding that cascading style sheets are loaded in order. Checked theme.scss to see what loads first. Viewed a non-broken theme in my store and realized that in Silvey's theme there is no file in Assets > SCSS > Layouts > Header. Simply copied the non-broken theme's file contents from another store and created a new file in Atom for header.css and pasted the contents. Saved and CSS loaded correctly.
 
-3. Product filtering was styled incorrectly. Used Google Dev tools to get an idea of which selector was the top-level for the product pages. Navigated to Assets > SCSS > Layouts > Body > body.scss and found that this styling, which includes .page-sidebar, was commented out. Removed comment tags and issue was resolved!
+3. Product filtering was styled incorrectly and appearing at the top of the page instead of as a side bar. Used Google Dev tools to get an idea of which selector was the top-level for the product pages. Navigated to Assets > SCSS > Layouts > Body > body.scss and found that this styling, which includes .page-sidebar, was commented out. Removed comment tags and issue was resolved!
 
 Thanks for reading!
 
